@@ -1,0 +1,53 @@
+/* globals.css */
+
+
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.07);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.blob {
+    position: fixed;
+    top: 200px;
+    bottom: 0;
+    left: 200px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #CAD7D8, #CAD7D8);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: -1;
+    mix-blend-mode: lighten;
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.2s ease-out;
+}
+
+@keyframes leftColorShift {
+    0% {
+        background: linear-gradient(90deg, #DB4242, #CAD7D8, #A586C4);
+    }
+    33% {
+        background: linear-gradient(90deg, #00A86B, #CAD7D8, #A586C4);
+    }
+    66% {
+        background: linear-gradient(90deg, #AFB530, #CAD7D8, #A586C4);
+    }
+    100% {
+        background: linear-gradient(90deg, #DB4242, #CAD7D8, #A586C4);
+    }
+}
+
+.animated-gradient {
+    animation: leftColorShift 30s ease-in-out infinite;
+    background-size: 100% 100%;
+    transition: background 2s ease-in-out;
+}
