@@ -8,7 +8,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import {useMedia} from "use-media";
 
-const roboto = Roboto_Mono({weight: '400'});
+const roboto = Roboto_Mono({
+    subsets: ['latin'],
+    preload: true,
+});
 const contact_one = ['SOUND DESIGN', 'AUDIO PRODUCTION', 'MIX & MASTERING', 'RECORDING', 'DJING'];
 const contact_two = ['HELLO@DAKSTUDIO.COM', '@_DAKSTUDIO'];
 

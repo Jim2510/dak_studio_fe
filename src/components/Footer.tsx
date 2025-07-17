@@ -1,6 +1,9 @@
 import {Roboto_Mono} from "next/font/google";
 
-const roboto = Roboto_Mono({weight:"400"})
+const roboto = Roboto_Mono({
+    subsets: ['latin'],
+    preload: true,
+});
 
 export default function Footer() {
     return (
