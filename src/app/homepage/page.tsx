@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import LayoutHomepage from '@/app/LayoutHomepage';
+import LayoutHomepage from '@/app/homepage/LayoutHomepage';
 import './homapage.css';
 import {useMedia} from "use-media";
 import MobileHomepageView from "@/components/MobileHomepageView";
