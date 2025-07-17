@@ -20,7 +20,8 @@ export default function HomePage() {
         return filtered[Math.floor(Math.random() * filtered.length)];
     }, []);
 
-    const applyBlobColor = useCallback((color: string) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const applyBlobColor = useCallback((_: string) => {
         if (blobRef.current) {
             blobRef.current.style.transition = 'background 1.2s ease';
             blobRef.current.style.background = `radial-gradient(circle at center, #A586C4, #CAD7D8)`;

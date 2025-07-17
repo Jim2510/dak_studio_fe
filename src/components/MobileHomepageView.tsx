@@ -3,7 +3,7 @@
 import {motion, useCycle} from "framer-motion";
 import {Ref, useEffect, useState} from "react";
 
-export default function MobileHomepageView({currentColor, blobRef}: {currentColor: string, blobRef: Ref<HTMLDivElement>}) {
+export default function MobileHomepageView({ blobRef}: { blobRef: Ref<HTMLDivElement>}) {
     const [isBlobVisible, setIsBlobVisible] = useState(true);
 
     const gradients = [
