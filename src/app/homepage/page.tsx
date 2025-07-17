@@ -57,7 +57,7 @@ export default function HomePage() {
     return (
         <LayoutHomepage onLogoClick={changeColor}>
             {!isMobile ?
-                (<MobileHomepageView blobRef={blobRef} currentColor={currentColor}/>) : (<RegularHomepageView/>) }
+                (<MobileHomepageView blobRef={blobRef} />) : (<RegularHomepageView/>) }
         </LayoutHomepage>
     );
 }
