@@ -37,15 +37,13 @@ export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
         >
             {/* Logo animato */}
             <motion.div
-                initial={{ x: 0, y: 0, scale: 2, top: '50%', left: '50%', translateX: '-50%', translateY: '-50%', position: 'absolute' }}
+                initial={{ scale: 2, top: '50%', left: '50%', x: '-50%', y: '-50%', position: 'absolute' }}
                 animate={{
-                    x: 0,
-                    y: 0,
                     scale: 1,
                     top: '50%',
                     left: '3rem',
-                    translateX: '0%',
-                    translateY: '-50%',
+                    x: '-50%',
+                    y: '-50%',
                     position: 'absolute'
                 }}
                 transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.4 }}
