@@ -23,7 +23,7 @@ export default function LoginPage() {
     return (
         <>
         <div className="w-screen min-h-screen flex justify-center items-center bg-black">
-            <form onSubmit={handleSubmit} className='p-5 bg-white'>
+            <form onSubmit={handleSubmit} className='p-5 bg-white flex flex-col justify-center items-center'>
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button type="submit">Login</button>
             </form>
