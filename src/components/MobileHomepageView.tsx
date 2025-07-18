@@ -26,7 +26,8 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
     const dynamicGradient = useTransform<[string, string], string>(
         [baseColor, mouseXPercent],
         ([color, xPercent]) => {
-            // @ts-ignore
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
             const x = parseFloat(xPercent);
             const left = Math.max(0, x - 20);
             const right = Math.min(100, x + 20);
