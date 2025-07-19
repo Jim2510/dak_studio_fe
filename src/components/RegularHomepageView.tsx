@@ -32,9 +32,9 @@ export default function RegularHomepageView() {
 
     return (
         <>
-        <div className='w-full min-h-screen bg-transparent flex flex-col justify-start items-center mt-20'>
+        <div className='w-full bg-transparent flex flex-col justify-start items-center mt-18'>
             <motion.div style={{background: dynamicGradientOne}} transition={{duration: 0.2, ease: "easeOut"}}
-                        className='min-h-[325px] w-full'></motion.div>
+                        className='min-h-[250px] w-full'></motion.div>
             <motion.div initial={{y: 100, opacity: 0}} whileInView={{y: 0, opacity: 1}}
                             transition={{duration: 1, delay: 0.3}}
                             className="row-span-2 bg-[#26211C]  w-full px-4 py-10 flex justify-between leading-3 text-[#CAD7D8]">
