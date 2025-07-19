@@ -19,8 +19,8 @@
     top: 200px;
     bottom: 0;
     left: 200px;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     background: radial-gradient(circle at center, #CAD7D8, #CAD7D8);
     filter: blur(60px);

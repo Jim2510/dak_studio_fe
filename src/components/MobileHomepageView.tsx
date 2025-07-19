@@ -29,8 +29,8 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-expect-error
             const x = parseFloat(xPercent);
-            const left = Math.max(0, x - 20);
-            const right = Math.min(100, x + 20);
+            const left = Math.max(0, x - 30);
+            const right = Math.min(100, x + 30);
             return `linear-gradient(90deg, ${color} ${left}%, #CAD7D8 ${x}%, #A586C4 ${right}%)`;
         }
     );
@@ -70,7 +70,7 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
             />
             <div className="relative w-full min-h-screen overflow-hidden">
                 <div
-                    className="blob"
+                    // className="blob"
                     ref={blobRef}
                     style={{
                         opacity: isBlobVisible ? 1 : 0,
