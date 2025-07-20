@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <SpeedInsights/>
       <body className='bg-[#A586C4]'>
         {children}
+        <SpeedInsights/>
       </body>
     </html>
   );
