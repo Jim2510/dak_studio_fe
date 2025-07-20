@@ -60,14 +60,14 @@ export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: startAnimation ? 1 : 0 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                className="hidden md:grid grid-cols-2 w-fit h-fit text-[#CAD7D8] md:text-base text-xs gap-2 md:gap-18 ml-auto"
+                className="hidden md:grid grid-cols-2 w-[30%] h-fit text-[#CAD7D8] md:text-base text-xs gap-2 md:gap-18 ml-auto"
             >
                 <h1 className="hidden">STUDIO, AUDIO, SOUND DESIGN, MILANO, MIX, MASTER, MASTERING, MIXING, PRODUCTION, REC, RECORDING</h1>
-                <div className='flex flex-col justify-start items-start w-[50%] text-nowrap'>
+                <div className='flex flex-col justify-start items-start col-span-1 text-nowrap w-full'>
                     {contact_one.map((contact, i) => <p key={i}>{contact}</p>)}
                 </div>
-                <div className='flex flex-col justify-start items-start w-[50%]'>
-                    {contact_two.map((contact, i) => <Link href='' className='hover:tracking-widest hover:font-bold transition-all ease-in-out ' key={i}>{contact}</Link>)}
+                <div className='flex flex-col justify-start items-start col-span-1 w-full '>
+                    {contact_two.map((contact, i) => <Link href='' className='hover:tracking-widest w-full hover:font-bold transition-all ease-in-out ' key={i}>{contact}</Link>)}
                 </div>
             </motion.div>
         </motion.div>
