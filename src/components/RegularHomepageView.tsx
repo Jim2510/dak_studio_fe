@@ -10,13 +10,13 @@ export default function RegularHomepageView() {
     const dynamicGradientOne = useTransform<[string, string], string>(
         [baseColor, mouseXPercent],
         ([color]) => {
-            return `linear-gradient(0deg, ${color} 0%, #CAD7D8 5%, #A586C4 40%)`;
+            return `linear-gradient(0deg, ${color} 0%, #CAD7D8 15%, #A586C4 40%)`;
         }
     );
     const dynamicGradientTwo = useTransform<[string, string], string>(
         [baseColor, mouseXPercent],
         ([color, ]) => {
-            return `linear-gradient(180deg, ${color} 0%, #CAD7D8 5%, #A586C4 40%)`;
+            return `linear-gradient(180deg, ${color} 0%, #CAD7D8 15%, #A586C4 40%)`;
         }
     );
 
