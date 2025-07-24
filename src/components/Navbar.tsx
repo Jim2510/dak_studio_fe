@@ -13,7 +13,10 @@ const roboto = Roboto_Mono({
     preload: true,
 });
 const contact_one = ['SOUND DESIGN', 'AUDIO PRODUCTION', 'MIX & MASTERING', 'RECORDING', 'DJING'];
-const contact_two = ['HELLO@DAKSTUDIO.COM', '@_DAKSTUDIO'];
+const contact_two = [
+    { email: 'HELLO@DAKSTUDIO.COM', href: 'mailto:hello@dakstudio.com' },
+    { email: '@_DAKSTUDIO', href: '' }
+];
 
 export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
     const [startAnimation, setStartAnimation] = useState(false);
@@ -67,7 +70,7 @@ export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
                     {contact_one.map((contact, i) => <p key={i}>{contact}</p>)}
                 </div>
                 <div className='flex flex-col justify-start items-start col-span-1 w-full '>
-                    {contact_two.map((contact, i) => <Link href='' className='hover:tracking-widest w-full hover:font-bold transition-all ease-in-out ' key={i}>{contact}</Link>)}
+                    {contact_two.map((contact, i) => <Link href={contact.href} className='hover:tracking-widest w-full hover:font-bold transition-all ease-in-out ' key={i}>{contact.email}</Link>)}
                 </div>
             </motion.div>
         </motion.div>
