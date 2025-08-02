@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{ children: ReactNode}>) {
   return (
       <html lang="en">
-        <body className='bg-[#A586C4]'>
+        <body className='bg-[#A586C4] no-scrollbar'>
           {children}
           <Analytics />
           <SpeedInsights />

@@ -11,7 +11,6 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
     const mouseXPercent = useTransform(mouseX, (x) => `${x}%`);
     const baseColor = useMotionValue(baseColors[0]);
 
-    // Effetto: cambio colore graduale ogni 10s
     useEffect(() => {
         const interval = setInterval(() => {
             const nextIndex = (currentIndex + 1) % baseColors.length;
@@ -22,7 +21,6 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
         return () => clearInterval(interval);
     }, [currentIndex, cycleIndex, baseColor]);
 
-    // Aggiorna il gradiente dinamicamente
     const dynamicGradient = useTransform<[string, string], string>(
         [baseColor, mouseXPercent],
         ([color, xPercent]) => {
