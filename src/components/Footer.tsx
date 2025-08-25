@@ -8,7 +8,7 @@ const roboto = Roboto_Mono({
 export default function Footer() {
     return (
         <>
-            <div className={`bg-[#26211C] w-full relative md:absolute md:text-base text-xs bottom-0 h-fit py-4 text-[#CAD7D8] text-justify md:px-8 px-2 leading-6 ${roboto.className}`}>
+            <div className={`bg-[#26211C] z-20 w-full relative md:absolute md:text-base text-xs bottom-0 h-fit py-4 text-[#CAD7D8] text-justify md:px-8 px-2 leading-6 ${roboto.className}`}>
                 <p>UN LUOGO TRA TECNICA E INTUITO. NON SOLO UNO STUDIO, MA UNO SPAZIO PER ASCOLTARE, CONDIVIDERE, CREARE. DAK E&apos; UN LABORATORIO CREATIVO. UN RIFUGIO PER CHI CERCA UNA VISIONE, UNA IDENTITA&apos; SONORA. DOVE IL SUONO PRENDE FORMA.</p>
             </div>
         </>
