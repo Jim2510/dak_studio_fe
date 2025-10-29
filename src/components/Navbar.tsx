@@ -66,10 +66,10 @@ export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
                 className="hidden md:grid grid-cols-2 w-[30%] h-fit text-[#CAD7D8] md:text-base text-xs gap-2 md:gap-18 ml-auto"
             >
                 <h1 className="hidden">STUDIO, AUDIO, SOUND DESIGN, MILANO, MIX, MASTER, MASTERING, MIXING, PRODUCTION, REC, RECORDING</h1>
-                <div className='flex flex-col justify-start items-start col-span-1 text-nowrap w-full'>
+                <div className='flex flex-col justify-start items-start col-span-1 text-nowrap w-full gap-1'>
                     {contact_one.map((contact, i) => <p key={i}>{contact}</p>)}
                 </div>
-                <div className='flex flex-col justify-start items-start col-span-1 w-full '>
+                <div className='flex flex-col justify-start items-start col-span-1 w-full gap-1'>
                     {contact_two.map((contact, i) => <Link href={contact.href} className='hover:tracking-widest w-full hover:font-bold transition-all ease-in-out ' key={i}>{contact.email}</Link>)}
                 </div>
             </motion.div>
