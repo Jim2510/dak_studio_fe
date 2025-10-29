@@ -4,7 +4,7 @@ import { motion, useCycle, useMotionValue, useTransform, animate } from "framer-
 import { Ref, useEffect, useState } from "react";
 
 export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivElement> }) {
-    const baseColors = ["#DB4242", "#00A86B", "#AFB530"]; // rosso, verde, giallo
+    const baseColors = ["#DB4242", "#00A86B", "#AFB530"];
     const [currentIndex, cycleIndex] = useCycle(0, 1, 2);
 
     const mouseX = useMotionValue(50);
@@ -15,7 +15,7 @@ export default function MobileHomepageView({ blobRef }: { blobRef: Ref<HTMLDivEl
         const interval = setInterval(() => {
             const nextIndex = (currentIndex + 1) % baseColors.length;
             cycleIndex();
-            animate(baseColor, baseColors[nextIndex], { duration: 1 }); // animazione fluida
+            animate(baseColor, baseColors[nextIndex], { duration: 1 });
         }, 10000);
 
         return () => clearInterval(interval);

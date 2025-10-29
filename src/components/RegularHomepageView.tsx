@@ -45,8 +45,8 @@ export default function RegularHomepageView() {
                         <p>DJING</p>
                     </div>
                     <div className="text-right space-y-2">
-                        <p>HELLO@DAKSTUDIO.IT</p>
-                        <p>@_DAKSTUDIO</p>
+                        <p>DAKSTUDIO@GMAIL.COM</p>
+                        <p>@DAKSTUDIO__</p>
                     </div>
                 </motion.div>
             <motion.div style={{ background: dynamicGradientTwo }} transition={{ duration: 0.2, ease: "easeOut" }} className='min-h-[350px] w-full'>
