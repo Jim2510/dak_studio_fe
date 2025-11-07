@@ -14,7 +14,7 @@ const roboto = Roboto_Mono({
 });
 const contact_one = ['SOUND DESIGN', 'AUDIO PRODUCTION', 'MIX & MASTERING', 'RECORDING', 'DJING'];
 const contact_two = [
-    { email: 'DAKSTUDIO@GMAIL.COM', href: 'mailto:dakstudio@gmail.com' },
+    { email: 'DAKSTUDIOMILANO@GMAIL.COM', href: 'mailto:dakstudiomilano@gmail.com' },
     { email: '@DAKSTUDIO__', href: 'https://www.instagram.com/dakstudio__?igsh=MXR0eWNpdDlhNnFoZA==' }
 ];
 
