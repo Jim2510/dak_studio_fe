@@ -69,7 +69,7 @@ export default function Navbar({ onLogoClick }: { onLogoClick: () => void }) {
                 <div className='flex flex-col justify-start items-start col-span-1 text-nowrap w-full gap-1'>
                     {contact_one.map((contact, i) => <p key={i}>{contact}</p>)}
                 </div>
-                <div className='flex flex-col justify-start items-start col-span-1 w-full gap-1'>
+                <div className='flex flex-col justify-start items-start col-span-1 w-full gap-1 -ml-5'>
                     {contact_two.map((contact, i) => <Link href={contact.href} className='hover:tracking-widest w-full hover:font-bold transition-all ease-in-out ' key={i}>{contact.email}</Link>)}
                 </div>
             </motion.div>
